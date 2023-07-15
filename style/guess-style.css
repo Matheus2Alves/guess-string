@@ -24,11 +24,17 @@ h1 {
     padding: 20px;
     font-variant: small-caps;
     font-size: 2em;
-    
 }
 
 #logo {
     color: #1DD3B0
+}
+
+#validations {
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
 }
 
 main {
@@ -52,12 +58,21 @@ main {
     padding: 15px;
 }
 
-.caractereWord {
+.characterWord {
     background-color: #C1A5A9;
     border-radius: 10px;
     font-family: 'Poppins', sans-serif;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
 }
 
+label {
+    display: flex;
+    flex-wrap: nowrap;
+}
 #input-word {
     margin: 15px;
 }
@@ -65,4 +80,56 @@ main {
 #word1 {
     color: #001021;
     border-radius: 10px;
+    width: 250px;
 }
+
+#word2 {
+    color: #001021;
+    margin: 10px 0px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+
+#word2:hover, #word2:focus, #word2:active {
+    -webkit-animation-name: hvr-back-pulse;
+    animation-name: hvr-back-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-color: #1DD3B0;
+    background-color: #1DD3B0;
+    color: #001021;
+  }
+
+@-webkit-keyframes word2 {
+    50% {
+      background-color: rgba(32, 152, 209, 0.75);
+    }
+  }
+  @keyframes word2 {
+    50% {
+      background-color: rgba(32, 152, 209, 0.75);
+    }
+  }
+
+  .correct {
+    background-color: #1DD3B0;
+  }
+
+  .in-order {
+    background-color: #F2C14E;
+  }
+
