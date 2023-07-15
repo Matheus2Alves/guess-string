@@ -44,14 +44,15 @@ window.onload = function() {
             if(divPosition >= 25) {
                 divPosition = 0
                 clearWords()
-                generatedWord = randomWord()
+                //generatedWord = randomWord()
                 isRandomWordGenerated = true
             }
 
             if(isRandomWordGenerated && wordValueClient !== generatedWord) {
                 divPosition = 0
-                validation.innerHTML = 'flop(camilou)' 
+                validation.innerHTML = `Flop!(camilou)<br> a palavra era <strong>${generatedWord}<strong>`
                 validation.style.backgroundColor = '#800E13'
+                generatedWord = randomWord()
             } 
 
             if(isRandomWordGenerated) {      
