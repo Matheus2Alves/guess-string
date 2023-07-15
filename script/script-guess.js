@@ -5,7 +5,6 @@ window.onload = function() {
     let randomWord = () => {
         return dictionary[Math.floor(Math.random() * dictionary.length)];
     }
-    window.alert(randomWord())
     let generatedWord = randomWord() 
     const clientSubmit = document.querySelector('input#word2')
     let wordValueClient = ''
@@ -24,7 +23,6 @@ window.onload = function() {
         } else {
             const result = checkWord(wordValueClient, generatedWord) 
             const {characterCorrect, characterIncorrect, characterOutOfOrder} = result 
-            window.alert(generatedWord)
             let characterWord = document.querySelectorAll('div.characterWord')
             
             for (let i = 0; i < 5; i++) {
