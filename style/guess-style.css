@@ -12,6 +12,11 @@ turquesa - #1DD3B0
     font-size: 1em;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: #02070c;
 }
 
 h1 {
@@ -19,7 +24,23 @@ h1 {
     padding: 20px;
     font-variant: small-caps;
     font-size: 2em;
+    
 }
+
+#logo {
+    color: #1DD3B0
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .container-words {
     display: grid;
     width: 250px;
@@ -29,14 +50,19 @@ h1 {
     grid-template: repeat(5,1fr) / repeat(5, 1fr);
     gap: 7px;
     padding: 15px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .caractereWord {
     background-color: #C1A5A9;
     border-radius: 10px;
+    font-family: 'Poppins', sans-serif;;
 }
 
+#input-word {
+    margin: 15px;
+}
+
+#word1 {
+    color: #001021;
+    border-radius: 10px;
+}
