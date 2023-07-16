@@ -125,11 +125,16 @@ label {
     }
   }
 
-  .correct {
-    background-color: #1DD3B0;
-  }
+.correct {
+  background-color: #1DD3B0;
+}
 
-  .in-order {
-    background-color: #F2C14E;
-  }
+.in-order {
+  background-color: #F2C14E;
+}
 
+a{
+  color: grey;
+  font-size: 0.8em;
+  text-decoration: none;
+}
